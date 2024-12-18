@@ -1,17 +1,13 @@
-import Header from "./components/containers/header/Header.jsx";
-import Footer from "./components/containers/footer/Footer.jsx";
-import Routine from "./components/containers/routine/Routine.jsx";
+import Menu from "./components/containers/menu/Menu.jsx";
 
 function App() {
     return (
         <>
-            <Header/>
             <main>
                 <section>
-                    <Routine />
+                    <Menu />
                 </section>
             </main>
-            <Footer/>
         </>
     )
 }
