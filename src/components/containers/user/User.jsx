@@ -12,8 +12,7 @@ User.propTypes = {
 function User({firstname, lastname, age, hobbies}) {
     return (
         <>
-            <FullName firstname={firstname} lastname={lastname} />
-            <p>Age : {age}</p>
+            <FullName firstname={firstname} lastname={lastname} age={age} />
             <Hobbies value={hobbies} />
         </>
     );

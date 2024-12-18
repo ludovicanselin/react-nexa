@@ -5,12 +5,13 @@ import FirstName from "./FirstName.jsx";
 FullName.propTypes = {
     firstname: PropTypes.string.isRequired,
     lastname: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
 }
 
-function FullName({firstname, lastname}) {
+function FullName({firstname, lastname, age}) {
     return (
         <>
-            <LastName value={lastname} /> <FirstName value={firstname} />
+            <FirstName value={firstname} age={age} /> <LastName value={lastname} />
         </>
     );
 }
