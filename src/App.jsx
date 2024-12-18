@@ -1,6 +1,6 @@
 import Header from "./components/containers/header/Header.jsx";
 import Footer from "./components/containers/footer/Footer.jsx";
-import Player from "./components/containers/player/Player.jsx";
+import User from "./components/containers/user/User.jsx";
 
 function App() {
     return (
@@ -8,7 +8,10 @@ function App() {
             <Header/>
             <main>
                 <section>
-                    <Player />
+                    <User firstname="Ludovic"
+                          lastname="Anselin"
+                          age={23}
+                          hobbies={["Sport", "Sleep", "Read"]}/>
                 </section>
             </main>
             <Footer/>

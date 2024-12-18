@@ -1,6 +1,15 @@
-function FirstName({value}) {
+import PropTypes from "prop-types";
+
+FirstName.propTypes = {
+    value: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired
+}
+
+function FirstName({value, age}) {
     return (
-        <>{value}</>
+        <>
+            Age : {age} | {value}
+        </>
     );
 }
 
