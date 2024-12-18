@@ -7,14 +7,14 @@ function Menu() {
     return (
         <>
             <Button content={hidden ? "Show" : "Hide"} onClick={() => setHidden(!hidden)} />
-            {!hidden && <menu>
+            {!hidden && <>
                 <h1>Menu Secret</h1>
-                <ul>
+                <menu>
                     <li>nourrir le chien</li>
                     <li>faire mes devoirs</li>
                     <li>essayer des trucs en React</li>
-                </ul>
-            </menu>}
+                </menu>
+            </>}
         </>
     );
 }
