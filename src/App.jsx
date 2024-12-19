@@ -1,11 +1,15 @@
-import Menu from "./components/containers/menu/Menu.jsx";
+import Hobbies from "./components/containers/user/Hobbies.jsx";
+import {useState} from "react";
 
 function App() {
+
+    const hobbiesState = useState([])
+
     return (
         <>
             <main>
                 <section>
-                    <Menu />
+                    <Hobbies state={hobbiesState} />
                 </section>
             </main>
         </>
